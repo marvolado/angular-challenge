@@ -1,0 +1,15 @@
+.card--product {
+    .card__picture {
+        margin-block: 0 1rem;
+    }
+}
+.card__picture {
+    img {
+        width: 100%;
+    }
+    &--full-width {
+        display: block;
+        margin: calc(-1 * var(--space-xl));
+        margin-bottom: 0;
+    }
+}

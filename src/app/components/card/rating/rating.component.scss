@@ -1,0 +1,19 @@
+.card__rating {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 2.4rem;
+    gap: 1rem;
+
+    img {
+        width: 1.6rem;
+        background: #2ECC71;
+        border-radius: 1rem;
+        padding: 0.3rem;
+
+        &.fire {
+            background: #F8593B;
+        }
+    }
+    
+}

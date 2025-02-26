@@ -1,0 +1,94 @@
+/* Roboto Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Global variables */
+:root {
+    --dark: #272829;
+    --blackish: #010101;
+    --charcoal: #FBFBFB;
+    --violet: #c223ea;
+    --fuxia: #fe1a59;
+    --main-gray: #bacad9;
+    --light-gray: #828F98;
+    --orange: #fa856f;
+    --salmon: #F96C52;
+
+    --font-primary: 'Roboto', sans-serif;
+
+    --space-sm: 1.1rem;
+    --space-md: 2.2rem;
+    --space-xl: 3rem;
+
+    --red-to-orange-horizontal: linear-gradient(90deg, rgba(248,89,59,1) 15%, rgba(240,151,25,1) 80%);
+    --red-to-orange-avatar: linear-gradient(35deg, rgb(254, 15, 80) 40%, rgba(240,151,25,1) 80%);
+    
+    font-size: 10px;
+    font-family: var(--font-primary);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--main-gray);
+}
+
+/* Utility classes */
+.grid-between {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.discount-price {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: var(--salmon);
+    font-weight: 500;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
