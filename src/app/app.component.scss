@@ -1,7 +1,7 @@
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     gap: 3rem;
     margin: 2rem;
