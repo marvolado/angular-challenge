@@ -1,0 +1,119 @@
+{
+    "sections": [
+      {
+        "type": "members",
+        "title": "Top 5 Members",
+        "description": "Maxim dolor in amet nulla laboris enim dolore consequat",
+        "users": [
+          {
+            "name": "Patricio Sassa",
+            "role": "Fraud Analyst",
+            "avatar": "images/users/user-02.png",
+            "button": {
+              "label": "Follow",
+              "type": "tertiary"
+            }
+          },
+          {
+            "name": "Jack Doohan",
+            "role": "Web Developer",
+            "avatar": "images/users/user-03.jpg",
+            "button": {
+              "label": "Follow",
+              "type": "tertiary"
+            }
+          },
+          {
+            "name": "Frank Colapinto",
+            "role": "Web Driver",
+            "avatar": "images/users/user-04.jpg",
+            "button": {
+              "label": "Follow",
+              "type": "tertiary"
+            }
+          },
+          {
+            "name": "Roberto Fox",
+            "role": "President of Sales",
+            "avatar": "images/users/user-05.png",
+            "button": {
+              "label": "Follow",
+              "type": "tertiary"
+            }
+          },
+          {
+            "name": "Michael Landon",
+            "role": "Office Manager",
+            "avatar": "images/users/user-08.jpeg",
+            "button": {
+              "label": "Follow",
+              "type": "tertiary"
+            }
+          }
+        ],
+        "footer": {
+          "text": "300 STUDENTS",
+          "action": {
+            "label": "VIEW ALL MEMBERS",
+            "link": "http://mindata.es/"
+          }
+        }
+      },
+      {
+        "type": "user",
+        "name": "Frank Colapinto",
+        "role": "Web Designer",
+        "avatar": "images/users/user-04.jpg",
+        "buttons": [
+          {
+            "label": "profile",
+            "type": "secondary"
+          },
+          {
+            "label": "website",
+            "type": "primary"
+          }
+        ]
+      },
+      {
+        "type": "product",
+        "title": "Strawberry Cake",
+        "src": "images/banners/cupcakes.jpg",
+        "alt": "Great cupcakes with Strawberries",
+        "width": "full-width",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium sit aspernatur aut.",
+        "price": {
+          "current": 14.90,
+          "original": 18.90
+        },
+        "button": {
+          "label": "ORDER NOW",
+          "type": "secondary",
+          "size": "xl"
+        },
+        "icons": [
+          {
+            "class": "leaf",
+            "src": "images/ui/leaf-svgrepo-com.svg"
+          },
+          {
+            "class": "fire",
+            "src": "images/ui/fire-svgrepo-com.svg"
+          }
+        ]
+      },
+      {
+        "type": "banner",
+        "title": "Ui card long title for test",
+        "src": "images/banners/bauhaus.png",
+        "alt": "Bauhaus art",
+        "width": "full-width",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.",
+        "button": {
+          "label": "ACTION NOW",
+          "type": "action"
+        }
+      }
+    ]
+  }
+  
