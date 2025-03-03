@@ -9,5 +9,5 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 export class PictureComponent {
   @Input() src: string = '';
   @Input() alt: string = '';
-  @Input() class: string = '';
+  @Input() width: string = '';
 }

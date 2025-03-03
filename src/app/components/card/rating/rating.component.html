@@ -1,4 +1,6 @@
 <ul class="card__rating">
-    <li><img class="leaf" src="images/leaf-svgrepo-com.svg" /></li>
-    <li><img class="fire" src="images/fire-svgrepo-com.svg" /></li>
-</ul>
+    <li *ngFor="let icon of icons">
+      <img [class]="icon.class" [src]="icon.src" />
+    </li>
+  </ul>
+  

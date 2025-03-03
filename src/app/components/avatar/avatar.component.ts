@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AvatarComponent {
   @Input() src: string = '';
-  @Input() alt: string = '';
   @Input() name: string = '';
+  @Input() alt: string = '';
   @Input() role: string = '';
 }

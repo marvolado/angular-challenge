@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RatingComponent } from '../rating/rating.component';
 import { TitleComponent } from '../../title/title.component';
 
@@ -9,5 +9,6 @@ import { TitleComponent } from '../../title/title.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  @Input() title: string = "";
+  @Input() icons: { class: string; src: string }[] = [];
 }

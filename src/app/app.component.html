@@ -1,50 +1,64 @@
 <main class="main">
 
-  <app-card type="members">
+  <app-card *ngIf="data?.sections[0]" [type]="data.sections[0].type">
     <header>
-      <app-title title="Minim dolorin"></app-title>
-      <p>Minim dolor in amet nulla laboris enim dolore consequat</p>
+      <app-title [title]="data.sections[0].title"></app-title>
+      <app-info [text]="data.sections[0].description"></app-info>
     </header>
-    <app-userlist>
-      <app-user src="images/user-02.png" alt="Patricio Sassa" role="Fraud Analyst" name="Patricio Sassa" label="FOLLOW" type="tertiary"></app-user>
-      <app-user src="images/user-03.jpg" alt="Jack Doohan" role="Web Developer" name="Jack Doohan" label="FOLLOW" type="tertiary"></app-user>
-      <app-user src="images/user-04.jpg" alt="Frank Colapinto" role="Web Driver" name="Frank Colapinto" label="FOLLOW" type="tertiary"></app-user>
-      <app-user src="images/user-05.png" alt="Roberto Fox" role="President of Sales" name="Roberto Fox" label="FOLLOW" type="tertiary"></app-user>
-      <app-user src="images/user-08.jpeg" alt="Michael Landon" role="Office Manager" name="Michael Landon" label="FOLLOW" type="tertiary"></app-user>
-    </app-userlist>
+    <app-userlist [users]="data.sections[0].users"></app-userlist>
     <app-footer>
       <div class="card__footer--gray-text">
-        543 STUDENTS
+        {{data.sections[0].footer.text}}
       </div>
-      <a href="#" class="card__footer--footer-link">
-        VIEW ALL MEMBERS
+      <a href="{{data.sections[0].footer.action.link}}" class="card__footer--footer-link">
+        {{data.sections[0].footer.action.label}}
       </a>
     </app-footer>
   </app-card>
 
-  <app-card type="user">
-    <app-avatar src="images/user-04.jpg" alt="John Connor" role="Web Designer"></app-avatar>
+  <app-card *ngIf="data?.sections[1]" [type]="data.sections[1].type">
+    <app-avatar 
+      [src]="data.sections[1].avatar" 
+      [name]="data.sections[1].name" 
+      [alt]="data.sections[1].name"
+      [role]="data.sections[1].role">
+    </app-avatar>
     <app-footer>
-      <app-button label="BUTTON" type="secondary"></app-button>
-      <app-button label="BUTTON" type="primary"></app-button>
+      <app-button
+        *ngFor="let button of data.sections[1].buttons"
+        [label]="button.label" 
+        [type]="button.type" 
+      >
+      </app-button>
     </app-footer>
   </app-card>
 
-  <app-card type="product">
-    <app-header></app-header>
-    <app-picture src="images/cupcakes.jpg" alt="This is sparta!" class="full-width"></app-picture>
-    <app-info text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium sit aspernatur aut."></app-info>
+  <app-card *ngIf="data?.sections[2]" [type]="data?.sections[2].type">
+    <app-header [title]="data.sections[2].title" [icons]="data.sections[2].icons"></app-header>
+    <app-picture 
+      [src]="data.sections[2].src" 
+      [alt]="data.sections[2].alt" 
+      [width]="data.sections[2].width">
+    </app-picture>
+    <app-info [text]="data.sections[2].description"></app-info>
     <app-footer>
-      <app-price></app-price>
-      <app-button label="ORDER NOW" type="secondary" size="xl"></app-button>
+      <app-price 
+        [current]="data.sections[2].price.current.toFixed(2)" 
+        [original]="data.sections[2].price.original.toFixed(2)">
+      </app-price>
+      <app-button 
+        [label]="data.sections[2].button.label" 
+        [type]="data.sections[2].button.type" 
+        [size]="data.sections[2].button.size">
+      </app-button>
     </app-footer>
   </app-card>
 
-  <app-card type="banner">
-    <app-picture src="images/bauhaus.png" alt="Piece of art" class="full-width"></app-picture>
-    <app-title title="Ui card long title for test"></app-title>
-    <app-info text="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut."></app-info>
-    <app-button label="ACTION NOW" type="action"></app-button>
+  <app-card *ngIf="data?.sections[3]"  [type]="data?.sections[3].type">
+    <app-picture [src]="data.sections[3].src" [alt]="data.sections[3].alt" [width]="data.sections[3].width"></app-picture>
+    <app-title [title]="data.sections[3].title"></app-title>
+    <app-info [text]="data.sections[3].description"></app-info>
+    <app-button [label]="data.sections[3].button.label" [type]="data.sections[3].button.type"></app-button>
   </app-card>
 
 </main>

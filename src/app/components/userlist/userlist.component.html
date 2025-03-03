@@ -1,3 +1,10 @@
 <ul class="card__list">
-    <ng-content></ng-content>
+    <app-user *ngFor="let user of users"
+        [src]="user.avatar"
+        [alt]="user.name"
+        [role]="user.role"
+        [name]="user.name"
+        [label]="user.button.label"
+        [type]="user.button.type">
+    </app-user>
 </ul>
